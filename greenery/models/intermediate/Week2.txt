@@ -1,0 +1,41 @@
+#Models
+What is our user repeat rate?
+Repeat Rate = Users who purchased 2 or more times / users who purchased
+
+SELECT (
+    SELECT COUNT(DISTINCT USER_ID) FROM ORDERS HAVING COUNT(DISTINCT ORDER_ID) >= 2
+) 
+    / (
+        SELECT COUNT(USER_ID) FROM ORDERS HAVING COUNT(DISTINCT ORDER_ID) > 0 
+    ) as RATE;
+
+    ~0.34
+
+What are good indicators of a user who will likely purchase again? What about indicators of users who are likely NOT to purchase again? 
+If you had more data, what features would you want to look into to answer this question?
+NOTE: This is a hypothetical question vs. something we can analyze in our Greenery data set. Think about what exploratory analysis you would 
+do to approach this question.
+
+Some good indicators would site visit rate, how long someone spends on the website, whether or not they added something to the cart if they 
+didn't check out, how often they visit the site after each visit, do site views match with promos. Indicators of someone who is not likely 
+to purchase again is a bit harder - perhaps if they've left a review or not (only those with strong opinions may review), how long the order
+ took to be placed and delivered.
+
+#MART
+Explain the marts models you added. Why did you organize the models in the way you did?
+
+I am submitting this project late, so for the sake of time, I've only created a simple intermediate model consisting of a join and then build 
+a dim_user table off of that, joining another. In the future, I'd like to build out some more metrics that provide more insight like a fact table
+ for users and orders to calculate lifetime spend and order volume. Perhaps, a delivery table to measure how our delivery partners are succeeding
+ given our and our customer's delivery expectations.
+
+#Tests
+I understand how to use the pre-mdae tests in debt and have run the 'unique' and 'null' tests on my marts model. I did not run into any issues nor
+did I produce any tests of my own. The question does imply that a test should have failed so that it can be corrected - what am I missing to find this
+error?
+
+#dbt Snapshots
+Which orders changed from week 1 to week 2?
+
+SELECT * FROM ORDERS_SNAPSHOT
+I am unable to answer because I had configured the snapshot incorrectly last week and have corrected it this week.

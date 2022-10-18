@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: user_order_facts
+    description: ""
+    columns:
+      - name: order_id
+        description: ""

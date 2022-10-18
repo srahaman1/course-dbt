@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: int_user_addresses
+    description: ""
+      
+    columns:
+      - name: USER_ID
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: FIRST_NAME
+        description: ""
+        tests:
+          - not_null
+          - unique
+      
+      - name: LAST_NAME
+        description: ""
+        tests:
+          - not_null
+          - unique
+      
+      - name: EMAIL
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: PHONE_NUMBER
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: CREATED_AT
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: UPDATED_AT
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: ADDRESS_ID
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: ADDRESS
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: ZIPCODE
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: STATE
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: COUNTRY
+        description: ""
+        tests:
+          - not_null
+          - unique

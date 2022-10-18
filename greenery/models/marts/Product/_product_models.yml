@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: fact_orders_views
+    description: ""
+    columns:
+      - name: order_id
+        description: ""

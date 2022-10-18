@@ -2,7 +2,7 @@ version: 2
 
 sources:
 
-  - name: postgres # name of the source (this can be named whatever you want, but should be descriptive. this source (superheroes) is used for our week 1 tutorial so thats why i named it this way)
+  - name: postgres # name of the source (this can be named whatever you want, but should be descriptive.
     schema: public # this is the schema our raw data lives in
     database: raw # this is the name of our database
 
