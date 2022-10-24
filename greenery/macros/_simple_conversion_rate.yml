@@ -1,0 +1,21 @@
+version: 2
+
+macros:
+  - name: simple_conversion
+    description: " "
+    arguments:
+      - name: column1
+        type: string
+        description: "column for conversion"
+
+      - name: table1
+        type: reference
+        description: "where to get the pull the data from"
+
+      - name: column2
+        type: string
+        description: "if filtering is needed"
+      
+      - name: condition1
+        type: string
+        description: "text for condition"

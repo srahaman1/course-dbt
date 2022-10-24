@@ -1,0 +1,9 @@
+version: 2
+
+macros:
+  - name: grant
+    description: "Grant role access to specific user"
+    arguments:
+      - name: role
+        type: string
+        description: "Input the name of the role you would like to grant access to."
