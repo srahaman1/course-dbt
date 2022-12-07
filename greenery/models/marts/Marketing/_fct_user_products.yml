@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_user_products
+    description: "A table containing information about the products that each Greenery user has purchased."
+    columns:
+      - name: product_subtotal
+        tests: 
+          - not_null
+          - positive_values

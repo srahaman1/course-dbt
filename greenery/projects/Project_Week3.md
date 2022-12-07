@@ -111,10 +111,10 @@ No changes were made to DAG bc I did not use any packages to simplify my process
 
 #Snapshot
 5 orders were shipped in the last week.
-'SELECT * FROM SNAPSHOTS.ORDERS_SNAPSHOT WHERE ORDER_ID IN (
+`SELECT * FROM SNAPSHOTS.ORDERS_SNAPSHOT WHERE ORDER_ID IN (
 '8385cfcd-2b3f-443a-a676-9756f7eb5404',
 'e24985f3-2fb3-456e-a1aa-aaf88f490d70',
 '5741e351-3124-4de7-9dff-01a448e7dfd4',
 '914b8929-e04a-40f8-86ee-357f2be3a2a2',
 '05202733-0e17-4726-97c2-0520c024ab85',
-'939767ac-357a-4bec-91f8-a7b25edd46c9')'
+'939767ac-357a-4bec-91f8-a7b25edd46c9')`
